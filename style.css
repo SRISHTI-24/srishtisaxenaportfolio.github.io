@@ -1,0 +1,668 @@
+:root{
+    --bg-black-900: rgb(18, 2, 2);
+    --bg-black-100: rgb(14, 1, 1);
+    --bg-black-50: rgb(14, 1, 1);
+    --text-black-900: rgb(252, 245, 245);
+    --text-black-700: rgb(241, 199, 199);
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 15px;
+}
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+::before, ::after
+{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.section{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 2000px;
+    padding: 0 30px;
+    top:0;
+    right:0;
+    opacity: 1;
+}
+.shadow-dark{
+    box-shadow: 0 0 20px rgb(14, 14, 14);
+}
+.content{
+    padding: 25px;
+}
+.side{
+    width: 270px;
+    height: 100%;
+    background: var(--bg-black-100);
+    color: aliceblue;
+    position: fixed;
+    left: 0;
+    top:0;
+    padding: 25px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side .logo
+{
+    position: absolute;
+    top:45px;
+    font-size: 40px;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+.side .logo a{
+    color: white;
+    padding: 14px 22px;
+    font-size: 28px;
+    letter-spacing: 4.5px;
+    position: relative;
+    font-weight: bold;
+}
+.side .logo a span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    color: orange;
+    font-weight: bold;
+}
+.side .logo a::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-style: solid;
+    border-top-color: orange;
+    border-left: 0px;
+    border-style: solid;
+    border-right-color: orange;
+    bottom: 0;
+    left: 110px;
+}
+.side .logo a::after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-top-color: orange;
+    border-right: 0px;
+    border-style: solid;
+    border-left-color: white;
+    top: 0;
+    right: 120px;
+}
+.side .nav{
+    margin-top: 55px;
+}
+.side .nav li{
+    margin-bottom: 20px;
+    background: black;
+    display: block;
+}
+.side .nav li a{
+    font-size: 18px;
+    font-weight: 550px;
+    display: block;
+    color: aliceblue;
+    padding: 5.5px 15.5px;
+}
+.side .nav li a i{
+    margin-right: 16px;
+}
+.lines{
+    background-color: black;
+    width: 100000px;
+    height: 5px;
+    border-style: dashed;
+    border-color: white;
+}
+.middlelines{
+    margin-top: 120px;
+    background-color: black;
+    width: 100000px;
+    height: 5px;
+    border-style: dashed;
+    border-color: white;
+}
+.hm-info{
+    display: flex;
+}
+.hm-info li{
+    margin-left: 150px;
+    margin-top: 200px;
+}
+
+.image{
+    margin-top:200px;
+    margin-left: 100px;
+    border-radius: 25px;
+    border-color: black;
+    background-color: orange;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-style: solid;
+    border-top-color: orange;
+    border-left: 0px;
+    border-style: solid;
+    border-right-color: orange;
+    bottom: 0;
+    left: 110px;
+}
+.hm-info .butt{
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: black;
+    background-color: orange;
+}
+.hm-info .butt a{
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: black;
+    background-color: orange;
+}
+.hm-info .butt:hover{
+    color: black;
+    background-color: white;
+}
+
+.s-title{
+    margin-top: 50px;
+    margin-left: 65px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 80px;
+    padding: 20px;
+}
+.s-title h1{
+    margin-left: -100px;
+    font-size: 40px;
+    color: black;
+    font-weight:bold;
+    position: relative;
+}
+.s-title h1::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: orange;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.s-title h1::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: orange;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px
+}
+.s-title p{
+    font-weight: 20px;
+}
+.row.aboutc{
+    margin-left: 100px;
+}
+.is {
+    margin-top: 230px;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.is .info .head{
+    margin-left: -15px;
+    background-color: orange;
+    text-align: center;
+    max-width: 800px;
+    
+}
+.is .info .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.is .info .info-item p{
+    font-weight: bold;
+    padding: 10px 0;
+    color: black;
+    border-bottom: 2px;
+    border-bottom-style: dotted ;
+    border-bottom-color: darkslategrey;
+}
+.is .info .info-item p span{
+    font-weight: 400;
+    color: black;
+    margin-left: 4px;
+    display: inline-block;
+
+}
+.is .info .but{
+    justify-content: space-between;
+    margin-left: 600px;
+}
+.is .info .but .but1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 25px;
+    background-color: orange;
+    color: aliceblue;
+}
+.is .info .but .but1:hover{
+    color: black;
+    background-color: white;
+}
+.is .info .but .but2{
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 25px;
+    background-color: orange;
+    color: aliceblue;
+}
+.info .but .but2:hover{
+    color: black;
+    background-color: white;
+}
+.is .skills .head{
+    margin-top: 40px;
+    margin-left: -15px;
+    background-color: orange;
+    text-align: center;
+}
+
+.is .skills .skills-items{
+    flex: 0 0 100%;
+    max-width: 90%;
+    height: 10x;
+}
+.is .skills .skills-items h5{
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    text-transform: capitalize;
+}
+.is .skills .skills-items{
+    margin-bottom: 20px;
+}
+.is .skills .skills-items .progress .progress-in{
+    background-color:black;
+    color: black;
+    height: 5px;
+    border-radius: 2px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.is .skills .skills-items .skill-percent{
+    font-weight: bold;
+}
+.about {
+    margin-left: 130px;
+}
+.about .education{
+    flex: 0 0 50%;
+    max-width: 800px;
+    margin-top: 30px;
+}
+.about h3.title{
+    width: 850px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    text-align: center;
+}
+.about .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about  .timeline{
+    background-color: black;
+    padding: 30px 15px;
+    border: 3px dashed black;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.about  .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+.about .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+    
+}
+.about .timeline .timeline-item .timelinedate{
+    color: orange;
+}
+.about .timeline .timeline-item .marks{
+    margin-left: 550px;
+}
+.about .experience{
+    flex: 0 0 50%;
+    max-width: 800px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 5px;
+}
+.about .experience h3.title{
+    width: 850px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    margin-left: 0px;
+    text-align: center;
+}
+.about .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 25px;
+}
+.about .timeline{
+    background-color: black;
+    padding: 30px 15px;
+    border: 3px dashed black;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.about .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+.about .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+    
+}
+.about  .timeline .timeline-item .timelinedate{
+    color: orange;
+}
+.marks{
+    margin-left: 280px;
+}
+.servicestitle{
+    margin-top: 50px;
+    margin-left: 68px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 80px;
+    padding: 20px;
+}
+.servicestitle h1{
+    font-size: 40px;
+    color: black;
+    font-weight:bold;
+    position: relative;
+}
+.servicestitle h1::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: rgb(213, 91, 16);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.servicestitle h1::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: rgb(213, 91, 16);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px
+}
+.servicestitle p{
+    font-weight: 20px;
+}
+.resumeimg{
+    margin-left: 350px;
+    height: 20px;
+}
+.middlelines2{
+    margin-top: 1000px;
+    background-color: black;
+    width: 100000px;
+    height: 5px;
+    border-style: dashed;
+    border-color: white;
+}
+.ctitle{
+    margin-top: 80px;
+    margin-left: 68px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 80px;
+    padding: 20px;
+}
+.ctitle h1{
+    font-size: 40px;
+    color: black;
+    font-weight:bold;
+    position: relative;
+}
+.ctitle h1::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: rgb(213, 91, 16);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.ctitle h1::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: rgb(213, 91, 16);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px
+}
+.card{
+    margin-left: 65px;
+    background-color: orange;
+    display: inline-flex;
+}
+.card .card-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: black;
+    color: orange;
+}
+.card .card-text .card-img-top{
+    display: inline-flex;
+}
+.card :hover{
+    background-color: black;
+}
+.cmtitle{
+    margin-top: 50px;
+    margin-left: 68px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 80px;
+    padding: 20px;
+}
+.cmtitle h1{
+    font-size: 40px;
+    color: black;
+    font-weight:bold;
+    position: relative;
+}
+.cmtitle h1::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: rgb(213, 91, 16);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.cmtitle h1::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: rgb(213, 91, 16);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px
+}
+.middlelines3{
+    margin-top: 100px;
+    background-color: black;
+    width: 100000px;
+    height: 5px;
+    border-style: dashed;
+    border-color: white;
+}
+.subcontainer{
+    background-color: black;
+    margin-left: 150px;
+    width: 1050px;
+}
+.contacttitle{
+    margin-left: 390px;
+    color: orange;
+    background-color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+    max-width: 28%;
+    text-align: center;
+    border-radius: 10%;
+}
+.contactsubtitle{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.contact-infoitem{
+    margin-top: 80px;
+    color: aliceblue;
+    margin-left: 290px;
+}
+.contact-infoitem .icon{
+    display: inline-block;
+    align-items: center;
+    margin-left: 15px;
+}
+.contact-infoitem .icon .fa{
+    font-size: 25px;
+    color: white;
+}
+.contact-infoitem h4{
+    color: orange;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.contact-infoitem .no1{
+    margin-left: -10px;
+}
+.contact-infoitem .mail{
+    margin-left: -80px;
+}
+.contact .contactform{
+    flex: 0 0 100%;
+    margin-left: 100px;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+.contact .contactform .formitems .formcontrol{
+    width: 400px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: black;
+    transition: all 0.3s ease;
+}
+.contact .contactform .formitems .formcontrol:focus{
+    box-shadow: 0 0 20px orange;
+}
+#msg{
+    width: 850px;
+    height: 50px;
+}
+.contact .contactform .col6{
+    flex: 0 0 50%;
+    max-width: 100%;
+    justify-content: center;
+}
+.contactform .btn{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contactform .btn .submit{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 25px;
+    background-color: orange;
+    color: black;
+}
+.contactform .btn .submit:hover{
+    color: white;
+    background-color: orange;
+}
+.lastlines{
+    margin-top: 50px;
+    background-color: black;
+    width: 100000px;
+    height: 5px;
+    border-style: dashed;
+    border-color: white;
+}

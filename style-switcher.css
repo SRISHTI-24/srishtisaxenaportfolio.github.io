@@ -1,0 +1,80 @@
+.style-switcher{
+    position: fixed;
+    right: 0;
+    top: 20px;
+    padding: 15px;
+    width: 200px;
+    color: orange;
+    border: 1px solid orange;
+    background-color: black;
+    border-radius: 15px;
+    z-index: 101;
+    transition: all 0.5s ease;
+    transform: translateX(100%);
+}
+.style-switcher .open{
+    transform: translateX(-105px);
+}
+.style-switcher .s-icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 22px;
+    background-color: black;
+    color: orange;
+    right: 100%;
+    border: 1px solid orange;
+    margin-right: 26px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    padding-top: 3.5px;
+}
+.style-switcher .s-icon i{
+    line-height: 45px;
+}
+.style-switcher .style-switcher-toggler{
+    top: 0;
+}
+.style-switcher .day-night{
+    top: 56px;
+}
+.style-switcher h4{
+    margin: 0 0 10px;
+    color: orange;
+    font-size: 15px;
+    font-weight: 500px;
+    text-transform: capitalize;
+}
+.style-switcher .colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.style-switcher .colors span{
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    color: white;
+}
+.style-switcher .color-1{
+    background-color: black;
+}
+.style-switcher .color-1{
+    background-color: rgb(223, 206, 19);
+}
+.style-switcher .color-2{
+    background-color: rgb(156, 32, 223);
+}
+.style-switcher .color-3{
+    background-color: rgb(140, 183, 239);
+}
+.style-switcher .color-4{
+    background-color: rgb(239, 103, 126);
+}
+.style-switcher .color-5{
+    background-color: rgb(58, 184, 88);
+}
