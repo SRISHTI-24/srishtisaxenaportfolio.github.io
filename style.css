@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
-
 :root{
     --bg-black-900: rgb(18, 2, 2);
     --bg-black-100: rgb(14, 1, 1);
@@ -136,25 +135,24 @@ ul{
     top: 0;
     right: 140px;
 }
-.side .nav{
+.side ul{
     margin-top: 55px;
 }
-.side .nav li{
-    margin-bottom: 20px;
+.side  ul li{
     background: black;
     display: block;
 }
-.side .nav li a{
+.side ul li a{
     font-size: 18px;
     font-weight: 550px;
     display: block;
     color: aliceblue;
     padding: 5.5px 15.5px;
 }
-.side .nav li a:hover{
+.side ul li a:hover{
     color: orange;
 }
-.side .nav li a i{
+.side ul li a i{
     margin-right: 16px;
 }
 .lines{
@@ -718,4 +716,48 @@ ul{
     height: 5px;
     border-style: dashed;
     border-color: white;
+}
+.details{
+    display: flex;
+}
+.details .more img{
+    width: 300px;
+    height: 300px;
+    margin-left: 200px;
+    border-radius: 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.details img a{
+    -webkit-transition: all .3s ease; 
+    -moz-transition: all .3s ease; 
+    -ms-transition: all .3s ease; 
+    -o-transition: all .3s ease; 
+    transition: all .3s ease;
+}
+.details .more img:hover a{
+    background: transparent; 
+    -moz-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    -o-transform: scale(1.2); 
+    -ms-transform: scale(1.2); 
+    transform: scale(1.2); 
+}
+.details .more a{
+    color: orange;
+}
+.details .more a:hover{
+    color: blue;
+}
+.details .more h2{
+    margin-left: 230px;
+    color: orange;
+}
+.details .more h4{
+    margin-left: 340px;
+    color: blue;
+}
+.details .more1{
+
 }
